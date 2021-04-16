@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+        function load()
+        {
+        setTimeout("window.open('http://127.0.0.1:5000/', '_self');", 500);
+        }
+        </script>
+
+      <style>
+
+      .Line2 {
+
+        border-left: 180px solid lightgray;
+        height:{{ blue_line }}px;
+
+      }
+      .Line1 {
+        border-left: 180px solid #28a1f7;
+        height: {{ gray_line }}px;
+      }
+
+      .Div1 {
+      width: 100%;
+      height: 100%;
+      margin: 1px 0;
+      background-color: #ffffff;
+      background-image: url({{url_for('static', filename='water_tank.jpeg')}});
+
+      }
+
+
+      </style>
+  </head>
+  <body onload="load()">
+
+    <center>
+      <br>
+      <br>
+
+
+    <table name="Table1" >
+      <tr>
+        <td class="Div1">
+
+          <table align="bottom" name="Table2"  height=420px style="border-spacing: 44px;">
+            <tr>
+              <td >
+               <br>
+
+ <br> <br>
+
+                 <br>
+                <div class="Line2"></div>
+                <div class="Line1"></div>
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+
+    </center>
+
+  </body>
+</html>
